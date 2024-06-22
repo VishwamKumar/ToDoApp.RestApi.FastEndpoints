@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<Authors>Vishwa Kumar</Authors>
+	<Company>Vishwam</Company>
+	<Product>ToDoApp</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FastEndpoints" Version="5.26.0">
+      <TreatAsUsed>true</TreatAsUsed>
+    </PackageReference>
+    <PackageReference Include="FastEndpoints.Swagger" Version="5.26.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ToDoApp.DataLibrary.Sqlite\ToDoApp.DataLibrary.Sqlite.csproj" />
+  </ItemGroup>
+
+</Project>
